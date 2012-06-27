@@ -1,0 +1,17 @@
+id: Multipost
+key: multipost
+name: Multipost
+author_name: Yuichi Takeuchi
+author_link: http://takeyu-web.com/
+l10n_class: Multipost::L10N
+description: <__trans phrase="plugin.description">
+version: 0.0.1
+
+callbacks:
+    template_source.edit_entry: $multipost::Multipost::Plugin::_cb_ts_edit_entry
+    template_param.edit_entry: $multipost::Multipost::Plugin::_cb_tp_edit_entry
+    template_param.preview_entry: $multipost::Multipost::Plugin::_cb_tp_preview_entry
+    template_param.preview_strip: $multipost::Multipost::Plugin::_cb_tp_preview_entry
+    cms_post_save.entry:
+        code: $multipost::Multipost::Plugin::_cb_ps_entry
+        priority: 10
