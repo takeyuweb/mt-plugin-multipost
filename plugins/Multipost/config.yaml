@@ -5,7 +5,7 @@ author_name: Yuichi Takeuchi
 author_link: http://takeyu-web.com/
 l10n_class: Multipost::L10N
 description: <__trans phrase="plugin.description">
-version: 0.0.1
+version: 0.0.2
 
 callbacks:
     template_source.edit_entry: $multipost::Multipost::Plugin::_cb_ts_edit_entry
